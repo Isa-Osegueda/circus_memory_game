@@ -1,0 +1,451 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font: 1em/1.5 "Arima Madurai", cursive;
+  width: 100%;
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #050505;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main,
+details,
+menu {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  font-family: "Berkshire Swash", cursive;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #f7f7f7;
+}
+
+.h-section {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h-page {
+  color: inherit;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+img {
+  width: inherit;
+  /*IE8*/
+  max-width: 100%;
+  height: auto;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+a:hover,
+a:focus {
+  border: 0;
+  text-decoration: none;
+}
+
+.white-link {
+  color: #fff;
+  -webkit-tap-highlight-color: white;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+video {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+th {
+  color: #fff;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+q {
+  font-style: italic;
+}
+
+p,
+li,
+dd,
+dt {
+  font-size: 12px;
+  font-family: "Arima Madurai", cursive;
+  color: #fff;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header h1 {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 13%;
+}
+
+.header .wrap-restart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 10%;
+  margin: 20px 20px 0 0;
+}
+
+.header .wrap-restart svg {
+  width: 22px;
+}
+
+.header .wrap-restart p {
+  text-align: center;
+  font-size: 12px;
+  color: #ef975b;
+  margin-top: 4px;
+}
+
+.header .wrap-restart .item {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.punctuation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.punctuation p {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.l-content {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.l-group:before, .l-group:after {
+  content: " ";
+  display: table;
+}
+
+.l-group:after, .l-group:after {
+  clear: both;
+}
+
+.group {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.group:before, .group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after, .group:after {
+  clear: both;
+}
+
+@media only screen and (min-width: 375px) {
+  .group {
+    max-width: 320px;
+  }
+}
+
+@media only screen and (min-width: 412px) {
+  .group {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .group {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .group {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .group {
+    max-width: 850px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .group {
+    max-width: 900px;
+  }
+}
+
+.bg-hero {
+  background-image: url("../img/hero-home.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: transparent;
+  color: #fff;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  background-size: cover;
+}
+
+/*.btn {
+
+}*/
+.btn--principal {
+  background-color: #004855;
+}
+
+.btn--principal:hover {
+  background-color: #f63800;
+}
+
+.btn--secundary {
+  background-color: #004855;
+}
+
+.btn--secundary:hover {
+  background-color: #f63800;
+}
+
+/*.btn--small {
+    
+}
+
+.btn--invert {
+
+    &:hover {
+       
+    }
+}*/
+.game img {
+  height: 20%;
+  width: 20%;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 720px) {
+  .game img {
+    width: 17%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .game img {
+    width: 18%;
+  }
+}
