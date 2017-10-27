@@ -5,7 +5,8 @@
 
     h1 {
         align-self:center; 
-        margin-right: 13%;
+        margin-right: 15%;
+        font-size: 36px;
     }
     .wrap-restart {
         display: flex;
@@ -27,16 +28,19 @@
             align-self:center;
         }
     }
+
+    @include query(720px) {
+        width: 14%;	
+        margin-right: 15%; 
+      }
+    
+      @include query(1024px) {
+        width: 90%;
+
+        h1 {
+            font-size: 50px;
+            margin-right: 26%
+        }   	
+      }
 }
 
-.punctuation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    
-    p {
-        font-weight: 900;
-        font-size: 14px;
-    }
-}
