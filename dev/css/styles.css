@@ -284,7 +284,7 @@ dt {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 10%;
+  width: 6%;
   margin: 20px 20px 0 0;
 }
 
@@ -421,16 +421,17 @@ body {
   background-color: #f63800;
 }
 
-/*.btn--small {
-    
+.btn-start {
+  width: 30%;
+  background-color: #ef975b;
+  color: #fff;
+  text-align: center;
+  margin-left: 35%;
+  margin-top: 3%;
+  padding: 3%;
+  font-size: 30px;
 }
 
-.btn--invert {
-
-    &:hover {
-       
-    }
-}*/
 .game img {
   height: 20.7%;
   width: 20.7%;

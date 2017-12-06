@@ -37,15 +37,15 @@ function startGame() {
         }, 3000);       
 }
 
-function resetGame() {
-    var data = document.getElementById("game");
-    cards.sort(function () { return Math.random() - 0.5 });
-    for (var i = 0; i < 20; i++) {
-        var card = cards[i].numberCard;
-        var data = document.getElementById(i.toString());
-        data.dataset.id = card;
-    }   
-}
+// function resetGame() {
+//     var data = document.getElementById("game");
+//     cards.sort(function () { return Math.random() - 0.5 });
+//     for (var i = 0; i < 20; i++) {
+//         var card = cards[i].numberCard;
+//         var data = document.getElementById(i.toString());
+//         data.dataset.id = card;
+//     }   
+// }
     
 function vaciar() {
     play1 = "";
@@ -68,9 +68,10 @@ function comprobar() {
 
     if (hits == 20) {
         document.getElementById("game").innerHTML = "GANASTE";
+        alert('felicidades');
     }
-
 }
+
 
 
 
@@ -84,30 +85,40 @@ function turnLetter() {
     //var selection = cards.selection;
     
     //var img = identifyJ2.dataset.valor;
-    console.log(identifyJ2);
-    console.log(play2);
-    console.log(img);
-    console.log(imgP);
+    // console.log(identifyJ2);
+    // console.log(play2);
+    // console.log(img);
+    // console.log(imgP);
 
 
     if (play1 !== "") {
 
-        if (img === play2 && identifyJ1 !== identifyJ2 && cards[parseInt(identifyJ2)].selection != true && cards[parseInt(identifyJ1)].selection != true) {
+
+        if (play1 === play2 && identifyJ1 !== identifyJ2 && cards[parseInt(identifyJ2)].selection != true && cards[parseInt(identifyJ1)].selection != true) {
 
             cards[parseInt(identifyJ1)].selection = true;
             cards[parseInt(identifyJ2)].selection = true;
             console.log('pareja');
             img.src = 'img/' + imgP + '.png';
-            vaciar();
+            
             comprobar();
+            vaciar();
 
         } else if (identifyJ1 !== identifyJ2) {
             var self = this;
+            // identifyJ2 = action.target;
+            // identifyJ1 = action.target;
+            
             setTimeout(function () {
-                img.src = 'img/bigTop.png';
-                
-                
+                 //self.img.src = 'img/bigTop.png';
+                // self.identifyJ2.src = 'img/bigTop.png';
+                // self.identifyJ1.src = 'img/bigTop.png';
+                document.getElementById(identifyJ2).src = 'img/bigTop.png';
+                document.getElementById(identifyJ1).src = 'img/bigTop.png';
                 vaciar();
+                console.log('ghghj');
+               
+
             }, 200);
 
             img.src = 'img/' + imgP + '.png';
@@ -121,10 +132,18 @@ function turnLetter() {
      }                      
 }
 
-function changeImage(posicion) {
-    document.getElementById(posicion + '.png');
-    //document.getElementById(posicion.toString()).innerHTML = contenido;
-}	
+function resetGame() {
+    var data = document.getElementById("game");
+    alert('tocado');
+    cards.sort(function () { return Math.random() - 0.5 });
+    for (var i = 0; i < 20; i++) {
+        var card = cards[i].numberCard;
+        var data = document.getElementById(i.toString());
+        data.dataset.id = card;
+    }   
+}
+
+
 
 
 
