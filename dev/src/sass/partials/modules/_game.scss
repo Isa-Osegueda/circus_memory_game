@@ -1,0 +1,43 @@
+.game {
+    img {
+        height: 20.7%;
+        width: 20.7%;
+        margin: 5px;
+
+        @include query(720px) {
+            width: 22%;	
+            margin: 7px;	
+        }
+
+        @include query(1024px) {
+            width: 14%;	
+            margin: 24px;	
+        }
+    }
+}
+
+.punctuation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    p {
+        font-weight: 900;
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    @include query(720px) {
+        width: 14%;	
+    }
+
+    @include query(1024px) {
+        width: 90%;
+
+        p {
+            font-size: 30px;
+            padding: 0 85px 20px 160px;
+        }
+    }
+}
+

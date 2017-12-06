@@ -1,0 +1,15 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
+    "extends": "airbnb-base",
+    "rules": {
+        "no-param-reassign": 0,
+        "arrow-body-style": [
+            "error",
+            "always"
+        ],
+        "padded-blocks": 0
+    }
+}

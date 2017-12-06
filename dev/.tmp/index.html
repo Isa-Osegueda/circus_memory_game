@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="jmaciasr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700,800,900|Berkshire+Swash" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+  <script type="text/javascript">
+    var arr=['article','aside','footer','header','nav','section','figcaption','figure','main','template'];
+    for(var i=0;i<arr.length;i++) document.createElement(arr[i]);
+  </script>
+  <![endif]-->
+  <meta name="description" content="">
+  <title></title>
+</head>
+<body>
+  <header class="header group">
+    <h1>Circus <br> Memory</h1>
+    <div class="wrap-restart"> 
+      <a type="button" href="" onclick="resetGame()"><img src="icons/icon.svg" alt=""></a>
+      <p class="item">Restart</p>
+    </div>
+  </header> 
+  <main>    
+    <section class="punctuation">
+        <p>Your Score:</p><p id="score">0</p>
+        <p>High Score:</p><p id="highScore">0</p>
+    </section>
+    <section class="game group" id="game">  
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="0">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="1">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="2">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="3">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="4">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="5">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="6">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="7">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="8">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="9">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="10">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="11">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="12">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="13">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="14">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="15">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="16">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="17">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="18">
+      <img src="img/bigTop.png" alt=""  data-valor="valor" onclick="turnLetter()" id="19">
+    </section>
+    <input class="btn-start" type="button" value="Iniciar" onclick="startGame()">
+  <main/>
+<script src="js/script.js"></script>
+</body>
+</html>
