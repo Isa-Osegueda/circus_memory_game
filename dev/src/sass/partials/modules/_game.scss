@@ -27,10 +27,6 @@
         margin: 20px;
     }
 
-    @include query(720px) {
-        width: 14%;	
-    }
-
     @include query(1024px) {
         width: 90%;
 
